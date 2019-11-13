@@ -1,7 +1,7 @@
 https://ai.stanford.edu/~jkrause/cars/car_dataset.html
 
 ### Tensorflow Yolov3용 train.txt, test.txt 파일 만들기
-```
+```python
 import pandas as pd
 
 def make_txt(csvpath) :
