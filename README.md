@@ -17,7 +17,7 @@ def make_txt(csvpath) :
     yolo_text=''
     for i in range(len(csvfile)) :
         img_path = base_path + csvfile.iloc[i]['fname']
-        cls = csvfile.iloc[i]['class']
+        cls = csvfile.iloc[i]['class']-1
         xmin = csvfile.iloc[i]['bbox_x1']
         ymin = csvfile.iloc[i]['bbox_y1']
         xmax = csvfile.iloc[i]['bbox_x2']
